@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font awesome icon -->
     <script src="https://kit.fontawesome.com/6183ab3892.js" crossorigin="anonymous"></script>
-    <!--google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
     <!-- header -->
@@ -24,35 +24,38 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href = "signup.html">Signup</a>
-
           </div>
         </div>
       </nav>
     </header>
     <!-- end of header -->
 
-
-
-
-    <!-- about -->
-    <section class = "about" id = "about">
-        <div class = "container">
-          <div class = "about-content">
-            <div>
-              <img src = "images/chef-about.jpg" alt = "">
+    <div class="container-contact">
+        <h1>Sign Up</h1>
+        <p>Create an account to get started!</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
             </div>
-            <div class = "about-text">
-              <div class = "title">
-                <h2>Emily Smith</h2>
-                <p>Cooking & Baking is my passion</p>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsa iure id animi, alias debitis doloremque tempora, voluptate in libero, distinctio quia voluptatibus excepturi esse. Quisquam non nobis esse a ex debitis, ad dolorum voluptates natus expedita iusto rem!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum distinctio ad impedit, cumque doloribus qui mollitia nihil molestiae, veniam voluptatum, illum accusamus porro odit saepe eos! Quas neque fugiat vitae alias, dolorem vero ullam debitis, expedita sunt molestias velit!</p>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- end of about -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        
+        <p class="redirect">Already have an account? <a href="login.html">Log In</a></p>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -65,6 +68,5 @@
       <span>&copy; 2024 Food Recipe Blog Page</span>
     </footer>
     <!-- end of footer -->
-    
   </body>
 </html>

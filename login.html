@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/signup.css">
   </head>
   <body>
     <!-- header -->
@@ -23,8 +23,7 @@
             <a href="blog.html">Blog</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href = "signup.html">Signup</a>
-
+            <a href="">Signup</a>
           </div>
         </div>
       </nav>
@@ -32,27 +31,26 @@
     <!-- end of header -->
 
 
-
-
-    <!-- about -->
-    <section class = "about" id = "about">
-        <div class = "container">
-          <div class = "about-content">
-            <div>
-              <img src = "images/chef-about.jpg" alt = "">
-            </div>
-            <div class = "about-text">
-              <div class = "title">
-                <h2>Emily Smith</h2>
-                <p>Cooking & Baking is my passion</p>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsa iure id animi, alias debitis doloremque tempora, voluptate in libero, distinctio quia voluptatibus excepturi esse. Quisquam non nobis esse a ex debitis, ad dolorum voluptates natus expedita iusto rem!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum distinctio ad impedit, cumque doloribus qui mollitia nihil molestiae, veniam voluptatum, illum accusamus porro odit saepe eos! Quas neque fugiat vitae alias, dolorem vero ullam debitis, expedita sunt molestias velit!</p>
-            </div>
+    <div class="container-login">
+      <h1>Login</h1>
+      <p>Welcome back! Please enter your credentials.</p>
+      
+      <form class="login-form">
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
           </div>
-        </div>
-      </section>
-      <!-- end of about -->
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">Log In</button>
+      </form>
+      
+      <p class="redirect">Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+
+    
 
     <!-- footer -->
     <footer>
