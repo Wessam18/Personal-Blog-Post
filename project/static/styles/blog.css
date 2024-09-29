@@ -4,208 +4,45 @@
 @import "responsive.css";
 
 
-/* Blog */
-.blog {
-  background: #f9f9f9;
-  padding: 4.5rem 0;
-}
 
-.blog-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-  margin-bottom: 45px;
-}
 
-.blog-item {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.blog-img {
-  position: relative;
-  height: 200px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.blog-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Container for blog layout */
+.row {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
 }
 
-.blog-img span {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-}
-.blog-img  span:hover {
-  background-color: #333;
-}
-.blog-text {
-  display: flex;
-  margin-bottom: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Left column (Blog content) */
+.leftcolumn {
+  flex: 3; /* Takes 3 parts out of 4 */
+  max-width: 100%; /* Ensure it resizes on smaller screens */
 }
 
-.blog-text h2 {
-  font-family: var(--Playfair);
-  font-size: 1.5rem;
-  margin: 10px 0;
-  justify-content: center;
-}
-
-.blog-text p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  font-weight: 300;
-  opacity: 0.9;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.blog-text a {
-  font-family: var(--Roboto);
-  color: #007bff;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-/* Author Info */
-.author-info {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.author-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 15px;
-  
-}
-
-.author-details h3 {
-  margin: 0;
-}
-
-.author-details p {
-  margin: 5px 0;
-}
-
-
-.Bold {
-  font-weight: bold;
-}
-
-
-.blog-header {
-  background-color: #424243;
-  background-image: url("static/images/blog-p-1.jpg");
-  height: 50px;
-  width: 100%;
-  color: white;
-  text-align: center;
-  size: 20px;
-  padding: 0%;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
+/* Right column (Sidebar) */
 .rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+  flex: 1; /* Takes 1 part out of 4 */
+  max-width: 100%;
 }
 
 /* Add a card effect for articles */
 .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
+  background-color: white;
   padding: 20px;
-  text-align: center;
-  background: #ddd;
   margin-top: 20px;
 }
 
-
-
+/* Blog image container */
 .blog-image {
   background-color: #424243;
-  height: 50%;
-  padding: 2%;
   color: #f1f1f1;
+  padding: 2%;
   margin-top: 2%;
 }
 
+/* Article content styling */
 .article {
-  padding: 2px;
-  margin: 2px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 18px;
 }
+
