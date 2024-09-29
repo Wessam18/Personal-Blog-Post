@@ -110,22 +110,10 @@
       margin-bottom: 50px;
     }
     .blog-image {
-      width: 443px;
+      width: 500px;
     }
   }
   /* Responsive media query */
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column; /* Stack columns on top of each other */
-  }
-}
-
-@media (max-width: 480px) {
-  .article {
-    font-size: 16px; /* Reduce font size on smaller screens */
-  }
-}
-/* Responsive media query */
 @media (max-width: 768px) {
   .row {
     flex-direction: column; /* Stack columns on top of each other */
